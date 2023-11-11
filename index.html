@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Estado del Servidor de Minecraft</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/images/favicon/logo.png" type="image/gif" />
+    <meta name="title" content="Demonscraft Network" />
+    <meta name="author" content="Marcos and Steve" />
+    <meta name="subject" content="Minecraft" />
+    <meta
+      name="description"
+      content="Somos un servidor de minecraft dedicado a el juego survival modificado para una mejor experiencia y jugabilidad"
+    />
+    <meta name="keywords" content="Minecraft, Demonscraft, Jugadores, Dificultad, Supervivencia" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit" content="1 day" />
+    <meta name="distribution" content="Global" />
+    <meta name="robots" content="All" />
+  </head>
+  <body>
+    <nav>
+      <a href="https://discord.gg/demonscraft-network-987411119582904410">Discord</a>
+      <a href="/views/shop.html">Rangos</a>
+      <div class="dropdown">
+        <button class="dropbtn">Areas</button>
+        <div class="nav-links">
+          <a href="/views/privacy.html">Terminos y Condiciones</a>
+          <a href="/views/reglamento.html">Reglamentos</a>
+          <a href="http://www.night-support.xyz/">Area de Trabajo</a>
+        </div>
+      </div>
+      <a href="/index.html">Estado</a>
+    </nav>
+    <h1>Estado del Servidor de Minecraft</h1>
+    <div class="range-conteiner">
+          <div class="conteiner">
+      <div class="info-container">
+        <div class="discord-info">
+          <h2>Servidor de Discord</h2>
+          <p>Usuarios conectados: <span id="discordUsers">Cargando...</span></p>
+          <span class="material-icons-sharp">groups</span> 
+        </div>
+        <div class="web-info">
+          <h2>Servidor Web</h2>
+          <p>Usuarios registrados: <span id="webUsers">Cargando...</span></p>
+          <span class="material-icons-sharp">groups</span> 
+        </div>
+      </div>
+      <div class="server-card">
+      <h2>Información del Servidor</h2>
+        <div class="server-frame">
+          <iframe style="width:728px;height:90px;max-width:100%;border:none;display:block;margin:auto" src="https://es.namemc.com/server/demonscraft.lol/embed" width="728" height="90"></iframe>
+        </div>
+        <p>IP del servidor: <a href="/views/shop.html">demonscraft.lol</a></d>
+        <p>Jugadores en línea: <span id="playerCount">-</span>
+            <button onclick="showPlayerList()">Show List</button>
+            <ul id="playerList" style="display: none;" class="player-list"></ul>
+        </p>
+        <p>Estado: <span id="serverStatus">-</span></p>
+        <p>Versión: <span id="serverVersion">-</span></p>
+        <p>Motd: <span id="serverMotd">-</span></p>
+      </div>
+      <div class="chart-container">
+        <canvas id="playerChart" width="600" height="200"></canvas>
+      </div>
+    </div>
+    </div>
+    <script src="/js/script.js"></script>
+    <script src="/js/list.js"></script>
+    <script src="/js/servers.js"></script>
+  </body>
+</html>

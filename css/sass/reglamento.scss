@@ -1,0 +1,41 @@
+@use 'format';
+
+.terminos-condiciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.minecraft,
+.discord {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 1200px;
+  height: 600px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+.minecraft,
+.discord {
+    width: 800px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+.minecraft,
+.discord {
+    width: 500px;
+    height: 200px;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Terminos y Condiciones</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/privacy.css" />
+    <link rel="shortcut icon" href="/images/favicon/logo.png" type="image/gif" />
+    <meta name="title" content="Demonscraft Network" />
+    <meta name="author" content="Marcos and Steve" />
+    <meta name="subject" content="Minecraft" />
+    <meta
+      name="description"
+      content="Somos un servidor de minecraft dedicado a el juego survival modificado para una mejor experiencia y jugabilidad"
+    />
+    <meta name="keywords" content="Minecraft, Demonscraft, Jugadores, Dificultad, Supervivencia" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit" content="1 day" />
+    <meta name="distribution" content="Global" />
+    <meta name="robots" content="All" />
+  </head>
+  <body>
+    <nav>
+      <a href="https://discord.gg/demonscraft-network-987411119582904410">Discord</a>
+      <a href="/views/shop.html">Rangos</a>
+      <div class="dropdown">
+        <button class="dropbtn">Areas</button>
+        <div class="nav-links">
+          <a href="/views/privacy.html">Terminos y Condiciones</a>
+          <a href="/views/reglamento.html">Reglamentos</a>
+          <a href="http://www.night-support.xyz/">Area de Trabajo</a>
+        </div>
+      </div>
+      <a href="/index.html">Estado</a>
+    </nav>
+    <h1>Terminos y Condiciones</h1>
+    <div class="terminos-condiciones">
+      <div class="terminos">
+        <h2>Teminos de Servicios</h2>
+      </div>
+      <div class="condiciones">
+        <h2>Condiciones de Uso</h2>
+      </div>
+    </div>
+    <div class="preguntas-frecuentes">
+      <h1>Preguntas Frecuentes</h1>
+      <div class="preguntas" id="pregunta1">
+        <div class="pregunta" onclick="toggleRespuesta('pregunta1')">
+          <span>¿Cuál es la pregunta?</span>
+          <div class="icono" id="icono1">
+            <i class="material-icons-sharp">keyboard_arrow_down</i>
+          </div>
+          <p class="respuesta" id="respuesta1">Esta es la respuesta a la pregunta.</p>
+        </div>
+      </div>
+      <div class="preguntas" id="pregunta2">
+        <div class="pregunta" onclick="toggleRespuesta('pregunta2')">
+          <span>¿Cuál es la pregunta?</span>
+          <div class="icono" id="icono1">
+            <i class="material-icons-sharp">keyboard_arrow_down</i>
+          </div>
+          <p class="respuesta" id="respuesta2">Esta es la respuesta a la pregunta.</p>
+        </div>
+      </div>
+      <div class="preguntas" id="pregunta3">
+        <div class="pregunta" onclick="toggleRespuesta('pregunta3')">
+          <span>¿Cuál es la pregunta?</span>
+          <div class="icono" id="icono1">
+            <i class="material-icons-sharp">keyboard_arrow_down</i>
+          </div>
+          <p class="respuesta" id="respuesta3">Esta es la respuesta a la pregunta.</p>
+        </div>
+      </div>
+      <div class="preguntas" id="pregunta4">
+        <div class="pregunta" onclick="toggleRespuesta('pregunta4')">
+          <span>¿Cuál es la pregunta?</span>
+          <div class="icono" id="icono1">
+            <i class="material-icons-sharp">keyboard_arrow_down</i>
+          </div>
+          <p class="respuesta" id="respuesta4">Esta es la respuesta a la pregunta.</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleRespuesta(id) {
+        const pregunta = document.getElementById(id);
+        pregunta.classList.toggle('active');
+        const respuesta = pregunta.querySelector('.respuesta');
+        const icono = pregunta.querySelector('.icono i');
+
+        if (pregunta.classList.contains('active')) {
+          respuesta.style.display = 'block';
+          icono.style.display = 'none';
+        } else {
+          respuesta.style.display = 'none';
+          icono.style.display = 'block';
+        }
+      }
+    </script>
+  </body>
+</html>

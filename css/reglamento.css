@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://cdn.discordapp.com/attachments/1093297476246700043/1169458203940098169/img1.jpg?ex=655eb453&is=654c3f53&hm=6f5b88ca51cfc2a396bacb94808430b3a8587a27a2d3c2fecce7d307533e8d52&");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  padding: 10px;
+}
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+}
+nav .dropdown {
+  float: left;
+  overflow: hidden;
+}
+nav .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+nav .dropdown .nav-links {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5); /* Use the same background color as the parent nav */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+nav .dropdown .nav-links a {
+  float: none;
+  color: white; /* Use the same text color as the parent nav */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+nav .dropdown .nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+}
+nav .dropdown:hover .nav-links {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.terminos-condiciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.minecraft,
+.discord {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 1200px;
+  height: 600px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.minecraft h2,
+.discord h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .minecraft,
+  .discord {
+    width: 800px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .minecraft,
+  .discord {
+    width: 500px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=reglamento.css.map */

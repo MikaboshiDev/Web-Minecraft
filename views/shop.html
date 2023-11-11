@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Rangos Minecraft</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/shop.css" />
+    <link rel="shortcut icon" href="/images/favicon/logo.png" type="image/gif" />
+    <meta name="title" content="Demonscraft Network" />
+    <meta name="author" content="Marcos and Steve" />
+    <meta name="subject" content="Minecraft" />
+    <meta
+      name="description"
+      content="Somos un servidor de minecraft dedicado a el juego survival modificado para una mejor experiencia y jugabilidad"
+    />
+    <meta name="keywords" content="Minecraft, Demonscraft, Jugadores, Dificultad, Supervivencia" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit" content="1 day" />
+    <meta name="distribution" content="Global" />
+    <meta name="robots" content="All" />
+  </head>
+  <body>
+    <nav>
+      <a href="https://discord.gg/demonscraft-network-987411119582904410">Discord</a>
+      <a href="/views/shop.html">Rangos</a>
+      <div class="dropdown">
+        <button class="dropbtn">Areas</button>
+        <div class="nav-links">
+          <a href="/views/privacy.html">Terminos y Condiciones</a>
+          <a href="/views/reglamento.html">Reglamentos</a>
+          <a href="http://www.night-support.xyz/">Area de Trabajo</a>
+        </div>
+      </div>
+      <a href="/index.html">Estado</a>
+    </nav>
+    <h1>Tienda de Rangos Minecraft</h1>
+    <div class="range-conteiner">
+      <div class="server-card">
+        <div class="rank-name">Lucifer</div>
+        <img src="/images/rango/rango1.png" alt="Rango Name" />
+        <div class="price">
+          <i class="material-icons-sharp">local_offer</i> Precio: $10 USD
+          <button class="offer-button" onclick="showOfferNotification()">Oferta</button>
+        </div>
+        <div class="protection-limit">
+          <i class="material-icons-sharp">security</i> Límite de Bloques de Protección: 8 Bloques
+        </div>
+        <div class="protection-limit"><i class="material-icons-sharp">home</i> Set Homes: 6 /sethome</div>
+        <div class="commands-icon" onclick="toggleCommandsList(this)"><i class="material-icons-sharp">info</i></div>
+        <div class="commands-list">
+          <ul>
+            <li>/feed (full comida)</li>
+            <li>/ec (abrir tu enderchest)</li>
+            <li>/craft (abrir tu mesa de crafteo)</li>
+            <li>/fix hand (reparar 1 item)</li>
+          </ul>
+        </div>
+        <div class="duration-icon" onclick="toggleDurationList(this)"><i class="material-icons-sharp">schedule</i></div>
+        <div class="duration-list">
+          <ul>
+            <li>Mensual: $10 USD</li>
+            <li>Permanente: $20 USD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="server-card">
+        <div class="rank-name">Adonis</div>
+        <img src="/images/rango/rango4.png" alt="Rango Name" />
+        <div class="price">
+          <i class="material-icons-sharp">local_offer</i> Precio: $16 USD
+          <button class="offer-button" onclick="showOfferNotification()">Oferta</button>
+        </div>
+        <div class="protection-limit">
+          <i class="material-icons-sharp">security</i> Límite de Bloques de Protección: 12 Bloques
+        </div>
+        <div class="protection-limit"><i class="material-icons-sharp">home</i> Set Homes: 8 /sethome</div>
+        <div class="commands-icon" onclick="toggleCommandsList(this)"><i class="material-icons-sharp">info</i></div>
+        <div class="commands-list">
+          <ul>
+            <li>/feed (full comida)</li>
+            <li>/ec (abrir tu enderchest)</li>
+            <li>/craft (abrir una mesa de trabajo)</li>
+            <li>/fix hand (reparar 1 item)</li>
+          </ul>
+        </div>
+        <div class="duration-icon" onclick="toggleDurationList(this)"><i class="material-icons-sharp">schedule</i></div>
+        <div class="duration-list">
+          <ul>
+            <li>Mensual: $16 USD</li>
+            <li>Permanente: $30 USD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="server-card">
+        <div class="rank-name">Asmodeos</div>
+        <img src="/images/rango/rango3.png" alt="Rango Name" />
+        <div class="price">
+          <i class="material-icons-sharp">local_offer</i> Precio: $26 USD
+          <button class="offer-button" onclick="showOfferNotification()">Oferta</button>
+        </div>
+        <div class="protection-limit">
+          <i class="material-icons-sharp">security</i> Límite de Bloques de Protección: 17 Bloques
+        </div>
+        <div class="protection-limit"><i class="material-icons-sharp">home</i> Set Homes: 10 /sethome</div>
+        <div class="commands-icon" onclick="toggleCommandsList(this)"><i class="material-icons-sharp">info</i></div>
+        <div class="commands-list">
+          <ul>
+            <li>/fly (volar)</li>
+            <li>/feed (full comida)</li>
+            <li>/ec (abrir tu enderchest)</li>
+            <li>/craft (abrir una mesa de trabajo)</li>
+            <li>/fix hand (reparar 1 item)</li>
+          </ul>
+        </div>
+        <div class="duration-icon" onclick="toggleDurationList(this)"><i class="material-icons-sharp">schedule</i></div>
+        <div class="duration-list">
+          <ul>
+            <li>Mensual: $26 USD</li>
+            <li>Permanente: $40 USD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="server-card">
+        <div class="rank-name">Astaroth</div>
+        <img src="/images/rango/rango4.png" alt="Rango Name" />
+        <div class="price">
+          <i class="material-icons-sharp">local_offer</i> Precio: $36 USD
+          <button class="offer-button" onclick="showOfferNotification()">Oferta</button>
+        </div>
+        <div class="protection-limit">
+          <i class="material-icons-sharp">security</i> Límite de Bloques de Protección: 23 Bloques
+        </div>
+        <div class="protection-limit"><i class="material-icons-sharp">home</i> Set Homes: 15 /sethome</div>
+        <div class="commands-icon" onclick="toggleCommandsList(this)"><i class="material-icons-sharp">info</i></div>
+        <div class="commands-list">
+          <ul>
+            <li>/fly (volar)</li>
+            <li>/feed (full comida)</li>
+            <li>/ec (abrir tu enderchest)</li>
+            <li>/craft (abrir una mesa de trabajo)</li>
+            <li>/hat (pon lo que tengas en tu mano en la cabeza)</li>
+            <li>/heal (full vida)</li>
+            <li>/fix hand (reparar 1 item)</li>
+            <li>/fix all (reparar todos tus items)</li>
+            <li>/nick (cambia tu nombre)</li>
+            <li>/ah sellinventory (subastar inventarios)</li>
+          </ul>
+        </div>
+        <div class="duration-icon" onclick="toggleDurationList(this)"><i class="material-icons-sharp">schedule</i></div>
+        <div class="duration-list">
+          <ul>
+            <li>Mensual: $36 USD</li>
+            <li>Permanente: $75 USD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="server-card">
+        <div class="rank-name">Behemoth</div>
+        <img src="/images/rango/rango1.png" alt="Rango Name" />
+        <div class="price">
+          <i class="material-icons-sharp">local_offer</i> Precio: $50 USD
+          <button class="offer-button" onclick="showOfferNotification()">Oferta</button>
+        </div>
+        <div class="protection-limit">
+          <i class="material-icons-sharp">security</i> Límite de Bloques de Protección: 30 Bloques
+        </div>
+        <div class="protection-limit"><i class="material-icons-sharp">home</i> Set Homes: 20 /sethome</div>
+        <div class="commands-icon" onclick="toggleCommandsList(this)"><i class="material-icons-sharp">info</i></div>
+        <div class="commands-list">
+          <ul>
+            <li>/fly (volar)</li>
+            <li>/feed (full comida)</li>
+            <li>/ec (abrir tu enderchest)</li>
+            <li>/craft (abrir una mesa de trabajo)</li>
+            <li>/hat (pon lo que tengas en tu mano en la cabeza)</li>
+            <li>/heal (full vida)</li>
+            <li>/fix hand (reparar 1 item)</li>
+            <li>/fix all (reparar todos tus items)</li>
+            <li>/nick (cambia tu nombre)</li>
+            <li>/ah sellinventory (subastar inventarios)</li>
+          </ul>
+        </div>
+        <div class="duration-icon" onclick="toggleDurationList(this)"><i class="material-icons-sharp">schedule</i></div>
+        <div class="duration-list">
+          <ul>
+            <li>Mensual: $50 USD</li>
+            <li>Permanente: $100 USD</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="/js/menus.js"></script>
+  </body>
+</html>

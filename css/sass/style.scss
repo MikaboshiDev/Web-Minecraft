@@ -1,0 +1,138 @@
+@use 'format';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.discord-info,
+.web-info {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 0 30px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 48%; /* Para que ambos elementos ocupen el 48% del contenedor */
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.server-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    span {
+      font-weight: bold;
+      .online {
+        color: green;
+      }
+      .offline {
+        color: red;
+      }
+      .motd {
+        color: yellow;
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px dashed white;
+    }
+  }
+  button {
+    background-color: #4caf50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor al pasar por encima */
+    margin-left: 10px; /* Ajuste de margen */
+    &:hover {
+      background-color: #46a049; /* Color de fondo al pasar el cursor */
+    }
+  }
+  select {
+    margin-top: 10px; /* Ajuste de margen */
+    width: 100%; /* Ancho */
+    padding: 10px; /* Espaciado interno */
+    display: none; /* Oculta la lista por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f1f1f1; /* Color de fondo */
+    color: black; /* Color del texto */
+    option {
+      padding: 10px; /* Espaciado interno */
+    }
+  }
+}
+
+.chart-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1200px) {
+  .server-card,
+  .chart-container {
+    width: 600px;
+  }
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .discord-info,
+  .web-info {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .server-card,
+  .chart-container {
+    width: 400px;
+  }
+  .discord-info,
+  .web-info {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .server-card,
+  .chart-container {
+    width: 300px;
+  }
+  .discord-info,
+  .web-info {
+    padding: 10px;
+  }
+}
